@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarPageActivity">
+
+        <ImageView
+            android:id="@+id/home_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/bg_mood_page"
+            tools:ignore="contentDescription"/>
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_blackarrow_back"
+        tools:ignore="contentDescription"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="190dp">
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:dateTextAppearance="@style/CalendarDateText"
+            android:firstDayOfWeek="1"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:focusedMonthDateColor="@color/primary"
+            android:selectedDateVerticalBar="@color/accent"
+            android:showWeekNumber="false"
+            android:unfocusedMonthDateColor="@color/gray"
+            android:weekDayTextAppearance="@style/WeekdayText"
+            android:weekNumberColor="@color/primary"
+            android:layout_marginBottom="220dp" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <ImageView
+        android:id="@+id/ic_happy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_happy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="200dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/ic_inlove"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_inlove"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="200dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/ic_excited"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_excited"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="200dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/ic_anxious"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_anxious"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="200dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/ic_sad"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_sad"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="400dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/ic_angry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_ic_angry"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="200dp"
+        tools:ignore="contentDescription"/>
+    <ImageView
+        android:id="@+id/btn_quote"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_btn_proverbs"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        tools:ignore="contentDescription" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

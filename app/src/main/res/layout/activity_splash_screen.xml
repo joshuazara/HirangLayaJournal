@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    android:gravity="center">
+
+    <!-- Lottie animation centered -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="500dp"
+        android:layout_height="1000dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/stars"/>
+
+    <!-- Logo on top of animation -->
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/inks"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Text below logo -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Laya Journal"
+        android:textSize="50sp"
+        android:textColor="#92863B17"
+        android:fontFamily="@font/campana"
+        android:textAlignment="center"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

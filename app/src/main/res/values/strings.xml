@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Laya</string>
+    <string name="write">WRITE</string>
+    <string name="title">Title</string>
+    <string name="write_note">Write your note here…</string>
+    <string name="text_format">Text Format</string>
+    <string name="nested_list">Nested List</string>
+    <string name="text_alignment">Text Alignment</string>
+    <string name="enhancement">Editing Tools</string>
+</resources>

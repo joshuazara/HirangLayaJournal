@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".OptionPageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="350dp"
+            android:src="@drawable/relax" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_favorites"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_btn_gradient"
+            android:textColor="@color/white"
+            android:fontFamily="@font/intel"
+            android:padding="10dp"
+            android:text="FAVORITES"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:drawableEnd="@drawable/ic_continue" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_reflection"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_btn_gradient"
+            android:textColor="@color/white"
+            android:fontFamily="@font/intel"
+            android:padding="10dp"
+            android:text="REFLECTION"
+            android:textSize="20dp"
+            android:layout_marginBottom="50dp"
+            android:drawableEnd="@drawable/ic_continue" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_blackarrow_back"
+        tools:ignore="contentDescription"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
